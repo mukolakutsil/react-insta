@@ -1,13 +1,82 @@
 import React, { Component } from 'react';
-import Post from './Post'
-
+import InstaServices from '../services/instaServices';
+import ErrorMessage from './Error';
+import User from './User';
 
 export default class Posts extends Component {
+
+    InstaServices = new InstaServices();
+
+
+    state = {
+        posts: [],
+        error: false
+    }
+
+
+    componentDidMount() {
+        this.updatePosts()
+    }
+
+
+    updatePosts() {
+        this.InstaServices.getAllPosts()
+            .then(this.onPostsLoaded)
+            .catch(this.onError);
+    }
+
+    onPostsLoaded = (posts) => {
+        this.setState({
+            posts,
+            error: false
+        })
+    }
+
+    onError = () => {
+        this.setState({
+            error: true
+        })
+    }
+
+    renderItems(arr) {
+        return arr.map(item => {
+            const { name, altname, src, photo, alt, descr, id } = item;
+
+            return (
+                <div key={id} className="post">
+                    <User
+                        src={photo}
+                        alt={altname}
+                        name={name}
+                        min />
+                    <img src={src} alt={alt} />
+                    <div className="post__name">
+                        {name}
+                    </div>
+
+                    <div className="post__descr">
+                        {descr}
+                    </div>
+                </div >
+            )
+        })
+    }
+
+
+
+
     render() {
+
+        const { error, posts } = this.state;
+
+        if (error) {
+            return <ErrorMessage />
+        }
+
+        const items = this.renderItems(posts)
         return (
             <div className="left" >
-                <Post src="https://media.wired.com/photos/5d09594a62bcb0c9752779d9/1:1/w_1500,h_1500,c_limit/Transpo_G70_TA-518126.jpg" alt="dwd" />
-                <Post src="https://cars.usnews.com/pics/size/640x420/static/images/article/202002/128389/1_title_2020_kia_optima.jpg" alt="dwd" />
+                {items}
             </div>
         )
 
