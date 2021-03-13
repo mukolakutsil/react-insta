@@ -1,13 +1,22 @@
 {
     "posts": [
         {
+            "name": "Mykola_Kutsil",
+            "altname": "Mykola",
+            "photo": "https://dm.henkel-dam.com/is/image/henkel/men_perfect_com_thumbnails_home_pack_400x400-wcms-international?scl=1&fmt=jpg",
+            "src": "https://res.cloudinary.com/practicaldev/image/fetch/s--qa72YNaF--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/me6sbpz893h3a6ip5zsv.jpg",
+            "alt": "React.js",
+            "descr": "React.js! It is cool))",
+            "id": "1"
+        },
+        {
             "name": "jessy_john",
             "altname": "Jessy",
             "photo": "https://ksassets.timeincuk.net/wp/uploads/sites/46/2017/03/Priti-Patel-re-sized.jpg",
             "src": "http://isha.sadhguru.org/blog/wp-content/uploads/2016/05/natures-temples.jpg",
             "alt": "Nature",
             "descr": "This is so perfect! Amazing nature!",
-            "id": "1"
+            "id": "2"
         },
         {
             "name": "abracham_mvp",
@@ -16,16 +25,16 @@
             "src": "https://wwwimage-secure.cbsstatic.com/thumbnails/photos/w1920/marquee/1025957/72e1f4c7b764c8d2_mwp_hp_hero_landscape.jpg",
             "alt": "Photo",
             "descr": "Hello, this is my first photo here!",
-            "id": "2"
+            "id": "3"
         },
         {
             "name": "petrychenko_tom",
-            "altname": "auto",
+            "altname": "tom",
             "photo": "https://cdn.tom-tailor.com/img/560_745/1015384_20901_5.jpg",
             "src": "https://images.drive.ru/i/0/5f644952ec05c47b6400001a.jpg",
             "alt": "Mazada CX-5",
             "descr": "Mazda cool",
-            "id": "3"
+            "id": "4"
         },
         {
             "name": "real_eggs",
@@ -34,7 +43,7 @@
             "src": "https://hips.hearstapps.com/delish/assets/18/08/1519321899-hard-boiled-eggs-horizontal.jpg",
             "alt": "My world",
             "descr": "When you so tired...",
-            "id": "4"
+            "id": "5"
         },
         {
             "name": "katefromlviv",
@@ -42,8 +51,8 @@
             "photo": "https://cdn.lifehack.org/wp-content/uploads/2015/01/alpha-woman-1024x768.jpeg",
             "src": "https://nighthelper.com/wp-content/uploads/2016/03/nature_waterfall_summer_lake_trees_90400_3840x2160.jpg",
             "alt": "Lake",
-            "descr": "Какое прекрасное летнее озеро! Сфоткала пока ехала в село, к бабушке",
-            "id": "5"
+            "descr": "What a beautiful summer lake! I took a picture while I was driving to the village, to my grandmother",
+            "id": "6"
         },
         {
             "name": "smoothiemaker",
@@ -52,7 +61,53 @@
             "src": "https://way2day.com/wp-content/uploads/2017/12/Smetannyj-keks-min.jpg",
             "alt": "Smoothie",
             "descr": "Hello! If you want to drink some delicious smoothies - just call me!",
-            "id": "6"
+            "id": "7"
+        }
+    ],
+    "profile": [
+        {
+            "name": "Mykola_Kutsil",
+            "altname": "Mykola",
+            "photo": "https://dm.henkel-dam.com/is/image/henkel/men_perfect_com_thumbnails_home_pack_400x400-wcms-international?scl=1&fmt=jpg",
+            "id": "111"
+        }
+    ],
+    "users": [
+        {
+            "name": "jessy_john",
+            "altname": "Jessy",
+            "photo": "https://ksassets.timeincuk.net/wp/uploads/sites/46/2017/03/Priti-Patel-re-sized.jpg",
+            "id": "112"
+        },
+        {
+            "name": "abracham_mvp",
+            "altname": "Abby",
+            "photo": "https://www.loyatic.eu/wp-content/uploads/2017/11/iStock_000020004182Medium1.jpg",
+            "id": "113"
+        },
+        {
+            "name": "petrychenko_tom",
+            "altname": "tom",
+            "photo": "https://cdn.tom-tailor.com/img/560_745/1015384_20901_5.jpg",
+            "id": "114"
+        },
+        {
+            "name": "real_eggs",
+            "altname": "eggs",
+            "photo": "https://www.washingtonpost.com/resizer/1RhnmRzobv_b5lzu2YIz381sV8s=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/4ZLH33AYAAI6TOHGKZYZBQX5BA.jpg",
+            "id": "115"
+        },
+        {
+            "name": "katefromlviv",
+            "altname": "Kate",
+            "photo": "https://cdn.lifehack.org/wp-content/uploads/2015/01/alpha-woman-1024x768.jpeg",
+            "id": "116"
+        },
+        {
+            "name": "smoothiemaker",
+            "altname": "Smoothie",
+            "photo": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-how-to-make-a-smoothie-horizontal-1542310071.png?crop=0.803xw:0.923xh;0.116xw,0.00510xh&resize=480:*",
+            "id": "117"
         }
     ]
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 const User = (props) => {
@@ -6,10 +7,10 @@ const User = (props) => {
     const { min, src, alt, name } = props;
 
     return (
-        <a href="#" className={min ? "user min" : "user"} >
+        <Link to="/profile/" className={min ? "user min" : "user"} >
             <img src={src} alt={alt} />
             <div>{name}</div>
-        </a>
+        </Link>
     )
 }
 

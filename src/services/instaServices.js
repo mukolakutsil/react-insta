@@ -24,4 +24,27 @@ export default class InstaServices extends Component {
         const res = await this.getResource('/posts/');
         return res;
     }
+
+    getAllPhotos = async () => {
+        const res = await this.getResource('/posts/');
+        // буремо з сервера тільки те, що нам потрібно
+        return res.map(this._transformPosts);
+    }
+
+    _transformPosts = (post) => {
+        return {
+            src: post.src,
+            alt: post.alt
+        }
+    }
+
+    getAllUsers = async () => {
+        const res = await this.getResource('/users/');
+        return res;
+    }
+
+    getProfile = async () => {
+        const res = await this.getResource('/profile/');
+        return res;
+    }
 }
